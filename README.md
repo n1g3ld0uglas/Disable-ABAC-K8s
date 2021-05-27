@@ -26,3 +26,10 @@ az aks create --resource-group nigelResourceGroup --name nigelAKSCluster --node-
 
 With the Azure AD feature flag, it will throw the below error:
 <img width="1117" alt="Screenshot 2021-05-27 at 10 31 23" src="https://user-images.githubusercontent.com/82048393/119802752-bbebbe80-bed6-11eb-84c0-77bc571ccfec.png">
+
+Otherwise, you can add Azure RBAC for Kubernetes Authorization into an existing AKS cluster, using the az aks update command with the flag enable-azure-rbac:
+
+```
+az aks update -g nigelResourceGroup -n nigelAKSCluster --enable-azure-rbac
+```
+
