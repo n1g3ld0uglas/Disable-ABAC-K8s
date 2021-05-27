@@ -15,7 +15,8 @@ Here is how we would disable it in GKE:
 ```
 gcloud container clusters update nigel-gke-cluster --zone europe-west2-a --no-enable-legacy-authorization
 ```
-<img width="1229" alt="Screenshot 2021-05-27 at 10 11 43" src="https://user-images.githubusercontent.com/82048393/119799695-3b2bc300-bed4-11eb-9a56-3c947728b0de.png">
+<img width="1229" alt="Screenshot 2021-05-27 at 10 11 43" src="https://user-images.githubusercontent.com/82048393/119803085-08cf9500-bed7-11eb-8caa-c83cb43adaa9.png">
+
 
 In this case of AKS, it recommends creating the AKS cluster with managed Azure AD integration to use their version of Azure RBAC for Kubernetes Authorization:
 
